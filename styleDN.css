@@ -1,0 +1,228 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-size: 13px;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: aliceblue;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 25px;
+    padding-top: 35px;
+    margin-left: 100px;
+    color: rgb(216, 65, 10);
+}
+span{
+    font-size: 25px;
+    margin-left: 10px;
+    color: black;
+    font-weight: normal;
+}
+.Help{
+    font-size: 15px;
+    margin-left: 65%;
+    color: rgb(216, 65, 10);
+}
+.container{
+    width: 100%;
+    height: 600px;
+    background-image: url('img/Anh_DN.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+}
+.login,.login2,.ntn_quetma{
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left:750px;
+    box-shadow: 2px 2px 5px rgb(142, 142, 142);
+    border-radius: 8px;
+    position: absolute;
+}
+.login2{
+    display: none;
+}
+.colum1{
+    display: flex;
+}
+.dangnhap h1{
+    width: 140px;
+    font-size: 20px;
+    margin-left: 10px;
+    color: black;
+    font-weight: normal;
+}
+#triangle-right {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 15px solid rgb(243, 242, 205);
+    border-bottom: 15px solid transparent ;
+    margin-left: 307px;
+    margin-top: 45px;
+  }
+.maqr p{
+    margin-top: 20px;
+    border: 3px solid rgb(239, 239, 55);
+    width: 140px;
+    height: 60px;
+    padding-top: 10px;
+    font-size: 14px;
+    background-color: rgb(243, 242, 205);
+    color: rgb(249, 182, 110);
+    font-weight: bold;
+    padding-left: 10px;
+}
+.anhqr img ,.anhqr2 img{
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.Maqr img{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.colum2{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.colum2 p:first-child{
+    font-size: 19px;
+    margin-left: 20px;
+}
+.colum2 p{
+    margin-top: 30px;
+}
+.LamTheNao{
+   margin-left: 90px;
+   color: rgb(12, 12, 147);
+}
+.colum2 p:last-child{
+   margin-left: 70px;
+   color: rgb(185, 185, 177);
+}
+.colum2 span{
+    font-size: 13px;
+    color: red;
+}
+.ntn_quetma{
+    margin-left: 300px;
+    display: none;
+}
+.ntn_quetma >p{
+    font-size: 19px;
+    margin-top: 30px;
+    margin-left:80px;
+}
+.quet_ma img{
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.colum3 p{
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 5px;
+}
+.colum3{
+    margin-top: 10px;
+}
+input{
+    width: 87%;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 1px solid rgb(229, 223, 223);
+    outline: 0 !important;
+}
+#dn:hover{
+    border: 1px solid rgb(63, 62, 62);
+}
+#pass:hover{
+    border: 1px solid rgb(63, 62, 62);
+}
+.btn{
+    background-color: rgb(246, 150, 116);
+    color: white;
+    font-size: 16px;
+}
+
+.quenMK{
+    display: flex;
+}
+.quenmk,.dnSMS{
+    color: rgb(10, 10, 163);
+    margin-top: 7px;
+    margin-left: 20px;
+}
+.dnSMS{
+    margin-right: 30px;
+}
+.hoac p{
+    width: 70px;
+    margin-top: -23px;
+    margin-left: 170px;
+    padding: 15px;
+    color: rgb(206, 204, 204);
+    background-color: white;
+}
+hr{
+    width: 80%;
+    margin-top: 20px;
+}
+.fb-gg{
+    display: flex;
+}
+#loi1{
+    font-weight: normal;
+    color: red ;
+    margin-left: 20px;
+    margin-top: 5px;
+    visibility: hidden;
+}
+#loi2{
+    font-weight: normal;
+    color: red;
+    margin-left: 20px;
+    margin-top: 5px;
+    visibility: hidden;
+}
+.fb p,.gg p{
+    border: 1px solid rgb(195, 196, 196);
+    width: 140px;
+    height: 40px;
+    padding-top: 11px;
+    padding-left: 30px;
+}
+.fb:hover {
+    background-color: rgb(243, 243, 239);
+}
+.gg:hover {
+    background-color: rgb(243, 243, 239);
+}
+i{
+    margin-right: 5px;
+}
+.login> p{
+    margin-left: 80px;
+    margin-top: 40px;
+}
+.dk{
+    font-size: 15px;
+    color: red;
+}

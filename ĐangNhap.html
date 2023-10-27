@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleDN.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <h1>Shopee <span>Đăng Nhập</span> <span class="Help">Bạn cần giúp đỡ ?</span></h1>
+    </header>
+    <div class="container">
+        <div class="login">
+            <div class="colum1">
+                <div class="dangnhap">
+                    <h1>Đăng Nhập</h1>
+                </div>
+                <div class="maqr">
+                    <p>Đăng nhập với mã QR</p>
+                </div>
+                <div onclick="MaQr()" class="anhqr">
+                    <img src="img/qr.jpg" alt="">
+                </div>
+            </div>
+            <input onmouseout="checkName1()" oninput="checkName2()" id="dn" type="text" autofocus placeholder="Email/Số điện thoại/Tên đăng nhập">
+            <h4 id="loi1">Vui lòng điền mục này</h4>
+           
+            <input  onmouseout="checkPass1()" oninput="checkPass2()"  id="pass" type="password" placeholder="Mật khẩu">
+            <h4 id="loi2">Vui lòng điền mục này</h4>
+            <input onmouseover="dangnhap()"  class="btn" type="button" value="ĐĂNG NHẬP">
+           
+            <div class="quenMK">
+                <div class="quenmk">
+                    <p>Quên mật khẩu</p>
+                </div>
+                <div class="dnSMS">
+                    <p>Đăng nhập với SMS</p>
+                </div>
+            </div>
+            
+            <hr>
+            <div class="hoac">
+                <p>HOẶC</p>
+            </div>
+            <div class="fb-gg">
+                <div class="fb">
+                    <p> <i class="fab fa-facebook fa-lg" style="color: blue;"></i>Facebook</p>
+                </div>
+                <div class="gg">
+                    <p> <i class="fab fa-google fa-lg" style="color: rgb(163, 14, 14);"></i>Google</p>
+                </div>
+            </div>
+            <p>Bạn mới biết đến Shopee ? <a href="dangky.html"> <span class="dk"> Đăng ký</span></a></p>
+        </div>
+        <div  class="login2">
+            <div class="colum1">
+                <div class="dangnhap">
+                    <h1>Đăng nhập với mã QR</h1>
+                </div>
+                <div  class="maqr">
+                    <p>Đăng nhập với mật khẩu</p>
+                   
+                </div>
+                <div id="triangle-right"></div>
+                <div onclick="mk_maqr()" class="anhqr2">
+                    <img  src="img/qr-an.jpg" alt="">
+                </div>
+            </div>
+            <div class="Maqr">
+                <img src="img/anhqr.jpg" alt="">
+            </div>
+            <div class="colum2">
+                <p>Quét mã  QR bằng ứng dụng Shopee</p>
+                <p class="LamTheNao">Làm Thế Nào Để Quét Mã ?</p>
+                <p>Bạn mới biết đến Shopee ? <a href="dangky.html"><span>Đăng Ký</span></a> </p>
+            </div>
+           
+        </div>
+        <div class="ntn_quetma">
+            <p>Làm thế nào để quét mã ? <i  style="font-size: 25px; margin-left: 20px; color: rgb(191, 191, 189);" class="fas fa-times An_quetma"></i></p>
+            <div class="quet_ma">
+                <img src="img/ltn-quetma.jpg" alt="">
+            </div>
+            <div class="colum3">
+                <p>Nhấn vào biểu tượng quét mã trên ứng </p>
+                <p>Dụng Shopee để mở trình quét mã QR</p>
+              
+            </div>
+           
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+    <script>
+        function dangnhap(){
+            const name = document.getElementById('dn').value
+            const pass = document.getElementById('pass').value
+            if(name == '' && pass ==''){
+                document.querySelector('.btn').style.cursor='no-drop'
+            }
+            else{
+                document.querySelector('.btn').style.cursor='pointer'
+                document.querySelector('.btn').style.backgroundColor= 'coral'
+            }
+        }
+     
+        function checkName1(){
+            if( document.getElementById('dn').value == '' ){
+                document.querySelector('#loi1').style.visibility ='visible';
+                document.getElementById('dn').style.border='1px solid red'
+                document.getElementById('dn').style.backgroundColor= 'rgb(245, 224, 224)'
+                document.getElementById('dn').focus()
+            }
+        }
+        function checkName2(){
+            if( document.getElementById('dn').value != '' ){
+                document.querySelector('#loi1').style.visibility ='hidden';
+                document.getElementById('dn').style.border='1px solid'
+                document.getElementById('dn').style.backgroundColor= 'white'
+            }
+        }
+        function checkPass1(){
+            if( document.getElementById('pass').value == '' ){
+                document.querySelector('#loi2').style.visibility ='visible';
+                document.getElementById('pass').style.border='1px solid red'
+                document.getElementById('pass').style.backgroundColor= 'rgb(245, 224, 224)'
+                document.getElementById('pass').focus()
+            }
+        }
+        function checkPass2(){
+            if( document.getElementById('pass').value != '' ){
+                document.querySelector('#loi2').style.visibility ='hidden';
+                document.getElementById('pass').style.border='1px solid'
+                document.getElementById('pass').style.backgroundColor= 'white'
+            }
+        }
+        function MaQr(){
+            document.querySelector('.login2').style.display = 'block'
+            document.querySelector('.login').style.display = 'none'
+        }
+         function mk_maqr(){
+            document.querySelector('.login2').style.display = 'none'
+            document.querySelector('.login').style.display = 'block'
+        
+        }
+        
+        var quet_ma = document.querySelector('.LamTheNao')
+        quet_ma.addEventListener('click' , function(){
+            document.querySelector('.ntn_quetma').style.display = ' block'
+        })
+        var an_quetma = document.querySelector('.An_quetma')
+        an_quetma.addEventListener('click' , function(){
+            document.querySelector('.ntn_quetma').style.display = ' none'
+        })
+    </script>
+</body>
+</html>

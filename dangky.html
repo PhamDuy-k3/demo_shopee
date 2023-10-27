@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleDN.css">
+    <link rel="stylesheet" href="styleDK.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <h1>Shopee <span>Đăng Ký</span> <span class="Help">Bạn cần giúp đỡ ?</span></h1>
+    </header>
+    <div class="container">
+        <div class="dki">
+            <p>Đăng ký</p>
+            <input oninput="checksdt()"  id="sdt" type="text" placeholder="Số điện thoại"><i class="fas fa-check-circle" style="color: #27d369;"></i>
+            <h3>Số điện thoại không hợp lệ !</h3>
+            <button onmouseover="checksdt()"  onclick="dangky()"  class="TiepTheo" type="text" >ĐĂNG KÝ </button>
+            <hr>
+            <div class="hoac">
+                <p>HOẶC</p>
+            </div>
+            <div class="fb-gg">
+                <div class="fb">
+                    <p> <i class="fab fa-facebook fa-lg" style="color: blue;"></i>Facebook</p>
+                </div>
+                <div class="gg">
+                    <p> <i class="fab fa-google fa-lg" style="color: rgb(163, 14, 14);"></i>Google</p>
+                </div>
+            </div>
+            <div class="thongtin">
+                <p >Bằng việc đăng kí , bạn đã đồng ý với Shopee về</p>
+                <p class="p2">Điều khoản dịch vụ<span>&</span>Chính sách bảo mất</p>
+                <p>Bạn đã có tài khoản ? <span ><a style="color: red;" href="ĐangNhap.html">Đăng nhập</a></span></p>
+            </div>
+           
+        </div>
+        <div id="over_fly">
+                
+        </div>
+        <div class="ma_sac_thuc">
+            <p>Mã xác thực (OTP) sẽ được gửi qua tin nhắn Zalo</p>
+            <p>của số điện thoai (+84)<span>TextSDT</span></p>
+            <button onclick="TroLai()" >Trở Lại</button>
+            <button>Phương thức khác</button>
+            <button>Gửi</button>
+        </div>
+    </div>
+
+    <footer>
+       
+    </footer>
+    <script>
+    let phoneNumberRegex = /^\d{10}$/;
+
+        function checksdt(){
+            var sdt = document.getElementById('sdt').value 
+            if(sdt == ''){
+               document.querySelector('.TiepTheo').style.cursor ='  no-drop'
+            }else if(!phoneNumberRegex.test(sdt)){
+                document.querySelector('h3').style.visibility = 'visible'
+                document.querySelector('#sdt').style.backgroundColor= 'rgb(245, 224, 224)'
+                document.querySelector('#sdt').style.border='1px solid red'
+                document.querySelector('.fa-check-circle').style.display = 'none'
+                document.querySelector('.TiepTheo').style.cursor ='no-drop'
+            }else if(phoneNumberRegex.test(sdt)){
+                document.querySelector('h3').style.visibility = 'hidden'
+                document.querySelector('#sdt').style.border='1px solid green'
+                document.querySelector('#sdt').style.backgroundColor= 'white'
+                document.querySelector('.fa-check-circle').style.display = 'block'
+                document.querySelector('.TiepTheo').style.cursor ='pointer'
+            }
+            else{
+                document.querySelector('.TiepTheo').style.cursor ='pointer'
+            }
+
+        }
+        function dangky(){
+            var sdt = document.getElementById('sdt').value 
+            var new_sdt = sdt.slice(1,10)
+            var a = '(+84)'
+            var new_sdt2 = a +" "+ new_sdt
+            if(phoneNumberRegex.test(sdt)){
+                document.querySelector('#over_fly').style.display = 'block'
+                document.querySelector('.ma_sac_thuc span').textContent = new_sdt
+                document.querySelector('.ma_sac_thuc').style.display = 'block'
+               // console.log(new_sdt2)
+                document.getElementById('sdt').value = new_sdt2
+                }
+            }
+           
+            
+         
+        function TroLai(){
+            document.querySelector('#over_fly').style.display = 'none'
+            document.querySelector('.ma_sac_thuc').style.display = 'none'
+        }
+    </script>
+</body>
+</html>

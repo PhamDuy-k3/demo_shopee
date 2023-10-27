@@ -1,0 +1,115 @@
+.dki{
+    background-color: white;
+    width: 400px;
+    height: 440px;
+    margin-top: 50px;
+    margin-left:750px;
+    box-shadow: 2px 2px 5px rgb(142, 142, 142);
+    border-radius: 8px;
+    position: absolute;
+}
+.dki >p{
+    font-size: 19px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.dki > i{
+    position: absolute;
+    margin-left: 320px;
+    margin-top: -25px;
+    display: none;
+}
+.TiepTheo{
+    width: 350px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: rgb(239, 105, 105);
+    border: none;
+    color: white;
+}
+input{
+    border: 1px solid rgb(212, 207, 207);
+}
+hr{
+    margin-top: 40px;
+}
+.thongtin{
+    margin-top: 30px;
+}
+.thongtin p{
+    text-align: center;
+    margin-top: 3px;
+}
+span{
+    font-size: 13px;
+    margin-right: 5px;
+}
+.thongtin p:last-child{
+    margin-top: 30px;
+    color: rgb(182, 185, 185);
+}
+.p2{
+    color: red;
+}
+a{
+    text-decoration: none;
+}
+h3{
+    font-weight: normal;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: red;
+    visibility: hidden;
+
+}
+.ma_sac_thuc{
+    width: 430px;
+    height: 170px;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    margin-left: 400px;
+    margin-top: 100px;
+    display: none;
+    z-index: 2;
+}
+.ma_sac_thuc span{
+    font-size: 16px;
+    margin-left: 2px;
+}
+#over_fly{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 2;
+    display: none;
+}
+.ma_sac_thuc p{
+    font-size: 16px;
+}
+.ma_sac_thuc p:first-child{
+    margin-top: 20px;
+}
+.ma_sac_thuc button{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid rgb(225, 223, 223);
+    margin-top: 30px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.ma_sac_thuc button:last-child{
+    background-color: rgb(231, 98, 21);
+    color: white;
+}
+.ma_sac_thuc button:hover{
+    background-color: rgb(240, 243, 243);
+}
+.ma_sac_thuc button:last-child:hover{
+    background-color: rgb(238, 132, 65);
+}

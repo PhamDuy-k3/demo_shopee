@@ -1,0 +1,661 @@
+.title >p{
+    margin-left: 30px;
+    margin-top: 120px;
+    font-size: 14px;
+}
+.title a{
+    margin-left: 5px;
+    font-size: 14px;
+}
+.hidden{
+    display: none;
+}
+.hidden1{
+    display: none;
+}
+body{
+    background-color: rgb(245, 247, 247);
+}
+.chitietspham{
+    width: 95%;
+    height: 750px;
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+}
+.anh{
+    width: 45%;
+}
+.anh >img{
+    width: 448px;
+    height: 450px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.anh video{
+    width: 448px;
+    height: 450px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border:  1px solid red;
+}
+.list-anh-con{
+    width:100%;
+    height: 100px;
+    margin-left: 0px;
+    position: relative;
+    overflow: hidden;
+}
+.ds-anh-con{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+}
+.ds-anh-con:not(.active_anhcon){
+    left: 100%;
+}
+span.next2, span.prev2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    color: #e91717;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 3px;
+    user-select: none;
+    cursor: pointer;
+
+}
+
+span.next2{
+    right: 30px;
+}
+span.prev2{
+    left: 20px;
+}
+span.next2:hover ,span.prev2:hover{
+    background-color: aliceblue;
+}
+
+.chiase{
+    margin-left: 80px;
+    margin-top: 30px;
+}
+.chiase i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.chiase i ,p{
+    display: inline-block;
+}
+.chiase p{
+    font-size: 16px;
+}
+.list-anh-con img ,.list-anh-con1 img{
+    width: 81px;
+    height: 81px;
+    float: left;
+}
+.list-anh-con img ,.list-anh-con1 img{
+   margin-left: 10px;
+   margin-top: 10px;
+}
+
+.list-anh-con img:hover ,.list-anh-con1 img:hover{
+    border: 2px solid red;
+    cursor: pointer;
+}
+.anh_con_active{
+    border: 2px solid red;
+}
+.chitiet{
+    width: 65%;
+}
+.chitiet > p{
+    width: 100px;
+    padding: 10px;border: 1px solid red;
+    margin-top: 10px;
+}
+.chitiet >p:hover{
+   background-color: antiquewhite;
+   cursor: pointer
+   ;
+}
+.zoom{
+    width: 820px;
+    height: 540px;
+    position: fixed;
+    left: 250px;
+    top:40px;
+    z-index: 3;
+    bottom: 0;
+    background-color: white;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+.anh{
+    display: flex;
+    flex-direction: column;
+}
+.anh1{
+    display: flex;
+}
+.anh-video >img{
+    width: 500px;
+    height: 516px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.anh-video{
+    width: 500px;
+    margin-right: 10px;
+}
+.title{
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 17px;
+}
+.anh-video video{
+    width: 500px;
+    height: 516px;
+}
+.over-fly{
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        background-color: rgba(0,0,0,0.3);
+        z-index: 2;
+        display: none;
+}
+.ten p{
+    display: inline-block; 
+    margin-right: 5px;
+    margin-top: 10px;
+}
+.ten p:last-child{
+    font-size: 20px;
+}
+.ten p:first-child{
+    padding: 3px;
+    background-color: red;
+    color: whitesmoke;
+}
+.danhgia p{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: rgb(165, 161, 161);
+}
+.danhgia i{
+    margin-left: 3px;
+}
+.danhgia p:last-child{
+   margin-left: 230px;
+   color: rgb(189, 186, 186);
+}
+.DG{
+    padding: 0px 15px 0px 15px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+.giaSP{
+    background-color: rgb(255, 251, 246);
+    margin-top: 25px;
+    height: 120px;
+}
+.giaSP p{
+    display: inline-block;
+    margin-right: 30px;
+}
+.gia_now {
+    font-size: 33px;
+    color: red;
+}
+.giam{
+    padding: 2px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+.danhgia_con p{
+    display: block;
+    margin-top: 10px;
+}
+.danhgia_con p:first-child{
+    color: red;
+}
+.danhgia_con{
+    margin-left: 30px;
+}
+.deal_soc{
+    margin-top: 10px;
+}
+.deal_soc p{
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 16px;
+}
+.deal_soc p:last-child{
+    padding: 2px;
+    background-color: rgb(240, 204, 204);
+    color: red;
+}
+.vanchuyen{
+    margin-top: 30px;
+  
+}
+.box_chonDC{
+    position: fixed;
+    width: 500px;
+    height: 350px;
+    left: 300px;
+    background-color: white;
+    top: 200px;
+    border-radius: 5px;
+    display: none;
+    z-index: 3;
+}
+.box_chonDC hr{
+    margin-top: 10px;
+}
+.box_chonDC p:first-child{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 20px
+}
+.box_chonDC >p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.box_chonDC >i{
+    margin-top: 10px;
+    margin-left: 20px
+}
+.themDC{
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    outline: none;
+    border: 1px solid coral;
+    border-radius: 3px;
+    padding: 5px;
+}
+.box_chonDC button{
+    padding: 6px;
+}
+.dc_my >p, input[type=radio] ,.themdc,.mdinh{
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 13px;
+}
+.dc_my p:first-child{
+    margin-top: 20px;
+}
+.mdinh{
+    color: red;
+    border: 1px solid red;
+}
+.themdc{
+    border: 1px solid rgb(186, 185, 184);
+}
+
+.sudung{
+    background-color: coral;
+    border: 1px solid coral;
+    border-radius: 3px;
+    box-shadow: 1px 2px 1px coral;
+    color: white;
+}
+.vanchuyen p ,.mienphivc {
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 16px;
+    
+}
+.mienphivc span{
+    font-size: 15px;
+    margin-left: 10px;
+}
+.mienphivc i{
+    margin-left: 5px;
+}
+.mienphivc p{
+    display: block;
+    margin-bottom: -50px;
+}
+.mienphivc i{
+    margin-right: 5px;
+}
+.themDC_new{
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    top: 30px;
+    left: 400px;
+    z-index: 4;
+    overflow:scroll;
+    display: none;
+}
+.themDC_new_con{
+    margin-top: 30px;
+    z-index: 2;
+}
+.themDC_new >p ,.themDC_new_con >p{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.dchimoi{
+    position: fixed;
+    z-index: 51;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+.themDC_new_con >input{
+    border: 1px solid rgb(206, 206, 203);
+}
+.themDC_new_con >input:focus{
+    outline: 1px solid rgb(183, 183, 182);
+}
+input[name="hoten"] ,input[name="sdt"] {
+    padding: 10px 20px 10px 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+input[name="dc"] ,input[name="dc_cuthe"],.them_vitri {
+    width: 435px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+input[name="dc_cuthe"]{
+    height: 60px;
+}
+
+.them_vitri{
+    border: 1px solid rgb(206, 206, 203);
+}
+input[name="nha_rieng"]:focus ,input[name="van_phong"]:focus{
+    border:  1px solid rgb(233, 102, 36);
+    color: chocolate;
+}
+input[type="button"]{
+    padding: 7px;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: white;
+}
+input[type="checkbox"]{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+input[name="tro_lai"]{
+    margin-top: 20px;
+    margin-left: 300px;
+}
+input[name="tro_lai"]{
+   border: none;
+   border-radius: 3px;
+   background-color: white;
+}
+input[name="tro_lai"]:hover{
+    background-color: rgb(223, 222, 222);
+ }
+ input[name="Hoan_thanh"]{
+    border: none;
+    border-radius: 3px;
+  background-color: rgb(233, 102, 36);
+ }
+ input[name="Hoan_thanh"]:hover{
+  background-color: rgb(238, 126, 74);
+ }
+.them_vitri{
+    width: 435px;
+    background-color: white;
+    height: 100px;
+    text-align: center;
+}
+input[name="them_Vt"]{
+    padding: 6px;
+    border: 1px solid rgb(206, 206, 203);
+    text-align: center;
+    margin-top: 20px;
+}
+.loai{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    margin-left: 0px;
+}
+.name_loai{
+    width: 20%;
+}
+.name_loai p{
+    font-size: 16px;
+}
+.all_loai{
+    width: 80%;
+}
+.all_loai button{
+    padding: 10px 20px 10px 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: white;
+    border: none;
+    outline: 1px solid bisque;
+}
+
+.all_loai button:focus{
+    border: 1px solid red;
+    color: red;
+    background-color: rgb(251, 251, 251);
+}
+.soluong input[type ="number"]{
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    padding-left: 15px;
+    margin-left: -5px;
+    margin-right: -25px;
+    border: 1px solid rgb(207, 207, 206);
+}
+.soluong input[type ="button"]{
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+    outline: 1px solid blanchedalmond;
+    cursor: pointer;
+    border: 1px solid rgb(207, 207, 206);
+}
+.soluong input[type ="button"]:hover{
+   background-color: azure;
+}
+
+.soluong p{
+    display: inline-block;
+    margin-right: 70px;
+    font-size: 16px;
+}
+.soluong{
+    margin-top: 30px;
+}
+.soluong p:last-child{
+    margin-left: 10px;
+}
+.themGh{
+    margin-top: 30px;
+}
+.themGh input{
+    padding: 15px;
+    font-size: 16px;
+}
+.themGh input:last-child{
+    margin-left: 240px;
+    background-color: rgb(248, 43, 43);
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+.themGh input:first-child{
+    background-color: rgb(253, 227, 213);
+    color: rgb(255, 4, 4);
+    border: 1px solid red;
+    border-radius: 2px;
+    padding: 15px 30px 15px 25px ;
+}
+.themGh >i{
+    margin-left: -195px;
+    font-size: 15px;
+    color: rgb(133, 18, 18);
+}
+.themGh input:first-child:hover{
+    background-color: rgb(249, 234, 226);
+}
+.themGh input:last-child:hover{
+    background-color: rgb(241, 126, 126);
+
+}
+.camket{
+    margin-top: 20px;
+    
+}
+.camket p{
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.ctsp{
+    width: 95%;
+    height: 420px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.ctsp table td{
+    font-size: 16px;
+}
+.ctsp >p{
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+.ctsp table{
+    margin-left: 50px;
+}
+.ctsp table td {
+    padding: 10px;
+}
+.ctsp table td:first-child {
+    color: rgb(137, 137, 136);
+}
+.motasp{
+    width: 95%;
+    height: 750px;
+    background-color: white;
+    margin-top: 30px;
+}
+
+.motasp> p{
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.ttsp {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.ttsp>p,.bangsize>p,.Loiich p:first-child,.huongdansudung >p{
+    font-size: 16px;
+}
+.ttsp ul li{
+    margin-top: 10px;
+    list-style: disc;
+    font-size: 14px;
+}
+.bangsize{
+    margin-top: 50px;
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+.bangsize ul li{
+    margin-top: 10px;
+    list-style: disc;
+}
+.huongdansudung{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.huongdansudung ul li{
+    margin-top: 10px;
+    list-style: disc;
+    font-size: 14px;
+}
+.Loiich{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.Loiich p{
+    display: block;
+    margin-top: 10px;
+}
+
+.DanhGiaSP{
+    margin-top: 30px;
+    width: 95%;
+    height: 1200px;
+    background-color: white;
+}
+.DanhGiaSP >p{
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+.tb_luachon{
+    display: flex;
+    width: 92%;
+    height: 150px;
+
+    background-color: rgb(244, 237, 229);
+}
+.tb{
+    width: 10%;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.tb> p{
+    color: rgb(251, 0, 0);
+    font-size: 33px;
+}
+.tb p span{
+    color: black;
+    font-size: 17px;
+}
+.luachon{
+    width: 70%;
+    margin-top: 30px;
+    margin-left: -100px;
+}
+.luachon p{
+    padding: 10px 20px 10px 20px;
+    border: 1px solid ;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.luachon p:first-child{
+    padding: 10px 40px 10px 40px;
+}
+.hienboderRed{
+    
+    border: 1px solid coral;
+    color: red;
+}

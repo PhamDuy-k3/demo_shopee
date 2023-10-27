@@ -1,0 +1,124 @@
+.bannerSP{
+    width: 95%;
+    height: 500px;
+   
+}
+body{
+    background-color: rgb(245, 247, 247);
+}
+.hidden1,.ListAn1{
+    display: none;
+}
+.hidden2,.ListAn2{
+    display: none;
+}
+.hidden3,.ListAn3{
+    display: none;
+}
+.bannerSP img{
+   width: 100%;
+   margin-top: 150px;
+}
+.DanhSachSP{
+    width: 95%;
+    height: 1850px;
+    margin-top: 30px;
+    display: flex;
+}
+.TatCaDanhMuc{
+    width: 15%; 
+}
+.tatcadanhmuc ul li,.boloctimkiem ul li,.noiban ul li{
+    font-size:14px;
+    margin-top: 20px;
+}
+.tatcadanhmuc >p ,.boloctimkiem>p{
+    font-size: 17px;
+    font-weight: bold;
+}
+.tatcadanhmuc p >i,.boloctimkiem p >i{
+   margin-right: 5px;
+}
+.active1{
+    color: red;
+}
+.boloctimkiem,.noiban{
+    margin-top: 50px;
+}
+
+.danhsachSP{
+    width: 85%;
+    height: 60px;
+    background-color: rgb(238, 240, 240);
+}
+.danhsachSP ul li{
+    float: left;
+    padding: 10px;
+    background-color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.danhsachSP li.Gia{
+    width: 200px;
+}
+
+.danhsachSP li.SapXep{
+    background-color: rgb(238, 240, 240);
+ }
+.danhsachSP li.PhoBien a{
+   color: white;
+   
+}
+.danhsachSP ul.sub-menu{
+    width: 200px;
+    height: 100px;
+    display: none;
+    position: absolute;
+    margin-left: -20px;
+    background-color: white;
+}
+.danhsachSP ul.sub-menu li {
+    margin-left: 0px;
+}
+.danhsachSP ul.sub-menu li:hover{
+    color: rgb(251, 67, 1);
+}
+.danhsachSP ul.sub-menu li a:hover{
+   color: coral;
+}
+.danhsachSP ul.main-menu li:hover ul.sub-menu{
+    display: block;
+}
+.goi-y-hom-nay{
+    margin-top: 70px;
+}
+.goiy-spcon{
+    width: 200px;
+}
+.goiy-spcon p.tieude{
+ color: black;
+}
+.tab-pane{
+    display: none;
+}
+.tab-item{
+    opacity: 0.8;
+}
+.tab-item.active{
+    opacity: 1;
+    background-color: rgb(250, 84, 24);
+    color: white;
+}
+.active{
+    display: block;
+}
+.goiy-spcon{
+    width: 19%;
+    background-color: white;
+    margin-right: 5px;
+    margin-top: 5px;
+}

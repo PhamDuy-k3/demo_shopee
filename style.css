@@ -1,0 +1,962 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+#container{
+    width: 100%;
+    height: 3200px;
+}
+header{
+    width: 100% ;
+    height: 120px;
+    background-color: #fa5130;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:0px;
+    z-index: 1;
+
+}
+.all{
+    margin-top: 140px;
+}
+.colum1{
+    width: 100%;
+    display: flex;
+}
+.colum2{
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+}
+ul{
+    list-style: none;
+}
+.row1{
+    width: 50%;
+}
+.taiungdung_box{
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    display: none;
+}
+.TaiUngDung{
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+.TaiUngDung img{
+    width: 180px;
+    height: 180px;
+}
+.TaiUngDung >p{
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.TaiUngDung i{
+    margin-right: 5px;
+}
+li.Taiungdung:hover .taiungdung_box {
+    display: block;
+}
+
+.row2{
+    width: 50%;
+}
+ul.menu1 {
+   margin-left: 4%;
+}
+.menu1 li > i{
+    margin-left: 4px;
+}
+ul.menu2 {
+    margin-left: 4%;
+ }
+.menu2 li a i{
+    margin-right: 4px;
+}
+ul.menu1 li{
+    float: left;
+    margin-left: 2%;
+    margin-top: 1%;
+    padding-right: 1%;
+    border-right: 1px solid bisque;
+}
+ul.menu1 li a,ul.menu3 li a,ul.menu2 li a{
+    color: white;
+    text-decoration: none;
+}
+ul.menu1 li a:hover,ul.menu2 li a:hover,ul.menu3 li a:hover{
+    color: antiquewhite;
+}
+ul.menu2 li{
+    float: left;
+    margin-left: 2%;
+    margin-top: 1%;
+    padding-right: 1%;
+}
+li.dk{
+    border-right: 1px solid bisque;
+}
+ul.menu2 {
+   margin-left: 200px;
+}
+.triangle-up-box{
+    width: 200px;
+    position: absolute;
+    display: none;
+    margin-left: -100px;
+    height: 70px;
+}
+li.TiengViet:hover .triangle-up-box {
+    display: block;
+}
+.triangle-up {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 13px solid white;
+    margin-left: 135px;
+  }
+.box{
+    width: 200px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+ul.language{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+ul.language li:hover{
+   color: #f17510;
+   cursor: pointer;
+}
+ul.language li:last-child{
+    margin-left: -60px;
+    margin-top: 25px;
+}
+.first-child{
+    color: #f17510;
+}
+.row3{
+    width: 15%;
+}
+.row3 h1{
+    font-size: 34px;
+    margin-left: 30px;
+    color: white;
+    font-family: cursive;
+}
+.row4{
+    width: 75%;
+}
+.timkiem input{
+    width: 90%;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 2px;
+}
+.timkiem input:focus{
+    outline:2px solid rgb(216, 147, 122);
+}
+.timkiem i{
+    margin-left: -65px;
+    padding-top: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    background-color: #fa5130;
+    border-radius: 5px;
+    color: white;
+}
+.timkiem i:hover{
+   background-color: #f2745b;
+}
+ul.menu3 li{
+    float: left;
+    margin-top: 10px;
+    padding-right: 1%;
+    font-size: 13px
+}
+.row5{
+    width: 10%;
+}
+.row5 i{
+    color: white;
+    margin-top: 10%;
+}
+.all{
+    width: 100%;
+    height: 3080px;
+}
+.banner{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.all_anh{
+    width: 100%;
+    display: flex;
+    height:270px;
+}
+.anhto{
+    width: 65% ;
+    position: relative;
+    overflow: hidden;
+}
+.anhnho{
+    width: 35% ;
+    height:100%;
+}
+
+.anhto img{
+    position: absolute;
+    width: 96% ;
+    height: 91%;
+    margin-left: 30px;
+}
+.anhto img:not(.active_anhto){
+    top: 0%;
+    left: -100%;
+}
+.anhnho1 img{
+    width:95% ;
+}
+.anhnho2 img{
+    width: 95% ;
+}
+
+
+
+
+
+
+.uudai{
+    width: 100%;
+}
+.uudai_con{
+    float: left;
+    width: 110px;
+    height: 110px;
+    margin-left: 27px;
+    border-radius: 20px;
+    text-align: center;
+}
+.uudai_con:hover{
+   transform: scale(1.1);
+}
+.uudai_con img{
+    width: 55px;
+    height:55px;
+}
+.active{
+    color: red;
+}
+#quangcao{
+    width: 400px;
+    height: 600px;
+    position: fixed;
+    left: 450px;
+    z-index: 3;
+    bottom: 0;
+    animation-name: my;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    display: none;
+}
+#quangcao img{
+    width: 100%;   
+    
+}
+#quangcao i{
+   color: rgb(255, 255, 255);
+   margin-left: 98%;
+   cursor: pointer;
+   background-color: red;
+}
+@keyframes my {
+    from {top:700px}
+    to {top:50px}
+}
+#over_fly{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 2;
+    display: none;
+}
+.all_danhmuc{
+    width: 100%;
+    height: 2680px;
+    background-color: rgb(238, 241, 241);
+    display: flex;
+    flex-direction: column;
+}
+.Danhmuc{
+    width: 95%;
+    height: 358px;
+    background-color: white;
+    margin-top: 20px;
+}
+.danhmuc-con {
+    width: 120px;
+    height: 150px;
+    border: 1px solid rgb(241, 239, 239);
+    text-align: center;
+    float: left;
+}
+.danhmuc-con:hover{
+    border: 0.1% solid rgb(230, 228, 228);
+    box-shadow: 1px 1px 4px rgb(230, 228, 228) ;
+}
+.all-danhmuccon{
+    margin-top: 1%;
+}
+.danhmuc-con img {
+     width: 80px;
+     height: 80px;
+     margin-top: 15%;
+}
+.Danhmuc h1{
+    font-size: 18px;
+    margin-left: 1%;
+    font-weight: normal;
+    color: rgb(116, 118, 118);
+    margin-top: 2%;
+}
+.flash_sale{
+    width: 95%;
+    height: 300px;
+    background-color: white;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.time {
+   display: flex;
+   position: absolute;
+   margin-left: 150px;
+   margin-top: 20px;
+}
+.time .item{
+    margin-right: 10px;
+    width: 25px;
+    height: 20px;
+    background-color: #000000;
+    color: white;
+}
+#day ,#hour ,#minute ,#seconds{
+    margin-left: 5px;
+    margin-top: 2px;
+}
+.tieude1{
+    display: flex;
+
+}
+.tieude1 h1{
+    font-size: 18px;
+    margin-left: 1%;
+    color: rgb(225, 56, 10);
+    margin-top: 2%;
+}
+.tieude1 p{
+    margin-right: 30px;
+    margin-top: 2%;
+    font-size: 15px;
+    color: red;
+}
+.hiden{
+    display: none;
+}
+.sp_sale{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+}
+span.next, span.prev, span.next1, span.prev1{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 14px;
+    color: #e91717;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 3px;
+    user-select: none;
+    cursor: pointer;
+}
+span.next1, span.prev1{
+    top: 45%;
+}
+span.next, span.prev{
+    z-index: 1;
+}
+span.next{
+    right: 20px;
+}
+span.prev{
+    left: 20px;
+}
+
+span.next1{
+    right: 20px;
+}
+span.prev1{
+    left: 40px;
+}
+span.next:hover , span.prev:hover ,span.next1:hover , span.prev1:hover{
+    background-color: #e2dddc;
+    opacity: 0.8;
+    color: rgb(255, 255, 255);
+}
+
+.dotsContainer{
+    position: absolute;
+    bottom: 5px;
+    top: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dotsContainer .dot{
+    width: 15px;
+    height: 15px;
+    margin: 0px 2px;
+    border: 3px solid #f9cdb0;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dotsContainer .active_dot{
+    background-color: red;
+}
+
+@keyframes next1{
+    from{
+        left: 0%;
+    }
+    to{
+        left: -100%;
+    }
+}
+@keyframes next2{
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+@keyframes prev1{
+    from{
+        left: 0%;
+    }
+    to{
+        left: 100%;
+    }
+}
+@keyframes prev2{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+.prev{
+    display: none;
+}
+.sp_sale:not(.active_fsale){
+    top: 45px;
+    left: -100%;
+}
+.sp_sale_con{
+    width: 200px;
+    height: 250px;
+    float: left;
+}
+.sp_sale_con:hover{
+    animation-name:identifier ;
+    position: relative;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes identifier {
+    form {top :0px;}
+    to{top:-5px;}
+}
+.sp_sale_con img{
+    width: 200px;
+    height: 200px;
+}
+.sp_sale_con p{
+   margin-left: 55px;
+    font-size: 19px;
+    color: red;
+}
+.sp_sale_con h4{
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f17510;
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+    padding: 1%;
+    border: 1px solid;
+}
+.sp_sale_con h4 i{
+   margin-right: 10px;
+}
+
+.banner-nho{
+    width: 95%;
+    height: 105px;
+    background-color: rgb(163, 239, 239);
+    display: flex;
+    margin-top: 20px;
+}
+.banner-con{
+    width: 34%;
+}
+.banner-con img{
+    width: 100%;
+    padding: 1%;
+    border-radius: 25px;
+}
+
+
+.shopee_mall{
+    width: 95%;
+    height: 580px;
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column
+}
+.list1{
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+}
+.list1 ul li{
+    float: left;
+    margin-right: 10px;
+    font-size: 16px;
+    margin-left: 2%;
+}
+a{
+    text-decoration: none;
+}
+.menu{
+    width: 70%;
+}
+.xemtatca{
+    width: 30%;
+}
+.xemtatca p{
+   margin-left: 60%;
+   font-size: 16px;
+   color: red;
+}.menu i{
+   color: red;
+   margin-right: 5px;
+}
+
+.sidebar_sp{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+.sidebar{
+    width: 33%;
+}
+.sidebar img{
+    width: 96%;
+    margin-left: 10px;
+}
+.sp{
+    width: 67%;
+}
+.sp-con{
+    width: 200px;
+    height: 226px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    text-align: center;
+}
+.sp-con img.a {
+    width: 150px;
+    height: 50px;
+    border-radius: 45px;
+    box-shadow: 1px 1px 4px rgb(211, 209, 209) ;
+}
+.sp-con img {
+    width: 80px;
+    height: 80px;
+    margin-top: 15%; 
+}
+.sp-con p{
+    margin-top: 5%;
+    font-size: 19px;
+    color: #f17510;
+}
+.Timkiemhangdau{
+    width: 95%;
+    height: 300px;
+    margin-top: 20px;
+    background-color: white;
+
+}
+.Timkiemhangdau >p{
+  font-size: 19px;
+  color:red;
+  margin-left: 1%;
+  margin-top: 2%;
+  position: absolute;
+}
+.list-sp-con{
+    text-align: center;
+    float: left;
+    width: 200px;
+    margin-top: 50px;
+}
+.list-sp-con img{
+    width: 100%;
+    height: 200px;
+   
+}
+.list-sp-con img:hover{
+    position: relative;
+    animation-name: timKiemHangDau;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.list-sp-con p{
+    font-size: 17px;
+    color: rgb(144, 142, 141)
+}
+@keyframes timKiemHangDau {
+    from {top:0px;}
+    to {top:-5px}
+}
+.goi-y-hom-nay{
+    width: 95%;
+    height: auto;
+    margin-top: 20px;
+    background-color: white;
+    margin-left: 10px;
+}
+.goi-y-hom-nay >p{
+    font-size: 19px;
+    margin-top: 2%;
+    color: red;
+    margin-bottom: 1%;
+}
+.goiy-spcon{
+    width: 16%;
+    float: left;
+    height: 288px;
+    border: 1px solid rgb(249, 214, 191);
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.goiy-spcon img{
+    width: 100%;
+}
+.goi-y-hom-nay p{
+    margin-left: 2%;
+}
+.goiy-spcon p.tieude p.tinhtrang{
+    margin-top: 5px;
+    font-size: 12px;
+}
+.goiy-spcon p.sale{
+    position: absolute;
+    margin-left: 5px;
+    color: red;
+    border: 1px solid red;
+    padding: 2px;
+    margin-top: 5px;
+    font-size: 10px;
+}
+.goiy-spcon p.gia{
+    margin-top: 24px;
+    color: red;
+}
+.goiy-spcon p.tinhtrang,p.gia{
+    display: inline-block;
+}
+.goiy-spcon p.tinhtrang{
+    padding-left: 55px;
+    color: rgb(158, 164, 164);
+}
+.goiy-spcon p.sptuongtu{
+    width: 192px;
+    margin-left: -1px;
+    color: white;
+    padding: 3%;
+    text-align: center;
+    margin-top: 10px;
+    background-color: red;
+    position: absolute;
+    display: none;
+}
+.goiy-spcon:hover p.sptuongtu{
+   display: block;
+}
+.goiy-spcon:hover {
+    border: 1px solid red;
+    animation-name: duy;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    position: relative;
+ }
+ @keyframes duy {
+    form{top:0px;}
+    to {top:-3px}
+ }
+.CHAT{
+    position: fixed;
+    width: 600px;
+    bottom: 0px;
+    right: 10px;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 2px #d3d2d2;
+    z-index: 5;
+    display: none;
+}
+
+@keyframes reSize1{
+    from{width:50px;height:50px;}
+    to{width:600px;height:500px;}
+}
+@keyframes reSize2{
+    from{width:600px;height:500px;}
+    to{width:0px;height:0px;}
+}
+@keyframes reSize3{
+    from{width:600px;height:500px;}
+    to{width:230px;height:500px;}
+}
+@keyframes reSize4{
+    from{width:230px;height:500px;}
+    to{width:600px;height:500px;}
+}
+.CHAT >p{
+    padding: 20px;
+    font-size: 19px;
+    color: #f17510;
+}
+.CHAT .icon , p{
+  display: inline-block;
+}
+.icon{
+    width: 100%;
+    margin-left: 78%;
+}
+.icon >i{
+    margin-right: 10px;
+    font-size: 16px;
+}
+.all_chat{
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+.ten_Chat{
+    width: 40%;
+    border: 1px solid rgb(233, 233, 232);
+    left: 0px;
+}
+.list_Chat{
+    width: 100%;
+    height: 400px;
+    overflow: scroll;
+}
+.list_chat{
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+}
+.lchat{
+    background-color: white;
+}
+.logo_shops{
+    width: 15%;
+}
+.noidung_shops{
+    width: 85%;
+}
+.noidung_shops >p{
+    display: block;
+    margin-bottom: 5px;
+    
+}
+.logo_shops >i{
+    margin-top: 10px;
+}
+.list_chat:hover{
+    background-color: #e8e8e8;
+}
+.lchat_active{
+    background-color: #e8e8e8;
+}
+.ten_Chat input{
+    width: 140px;
+    height: 30px;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid rgb(233, 232, 230);
+    outline: 1px;
+    border-radius: 5px;
+}
+
+.ten_Chat >i{
+    position: absolute;
+    margin-top: 19px;
+    margin-left: 15px;
+}
+.ten_Chat select{
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.noidung_chat{
+    width: 60%;
+    height: 340px;
+    overflow: scroll;
+    border: 1px solid rgb(243, 242, 239);
+}
+.noidung_chat >p{
+    padding: 14px;
+}
+.van_ban_chat >p{
+    width: 60%;
+    text-align: justify;
+    padding: 10px;
+    background-color: #f7f7f7;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.nd_FB >p{
+    width: 55%;
+    text-align: justify;
+    padding: 10px;
+    background-color: #f7f7f7;
+    margin-top: 10px;
+    margin-left: 130px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.fa-times{
+    position: absolute;
+    right: 10px;
+    color: #e2dddc;
+}
+.feedback{
+    position: fixed;
+    width: 360px;
+    height: 100px;
+    background-color: #ffffff;
+    border-top: 1px solid rgb(232, 232, 230);
+    bottom: 0px;
+}
+.feedback >input{
+    width: 320px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+.feedback input , i{
+    display: inline-block;
+}
+.feedback > i{
+    color: green;
+    cursor: pointer;
+}
+
+.noi_dung_chat:not(.fb_active){
+    display: none;
+}
+.feedback_logo{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.feedback_logo >i{
+    margin-right: 7px;
+    font-size: 16px;
+    color: rgb(157, 157, 250);
+    cursor: pointer;
+}
+.chat_con{
+    position: fixed;
+    width: 100px;
+    bottom: 0px;
+    right: 10px;
+    height: 50px;
+    background-color: rgb(232, 115, 31);
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 2px #d3d2d2;
+    z-index: 5;
+    cursor: pointer;
+}
+.chat_con p{
+    color: white;
+    padding: 17px;
+    margin-left: 10px;
+    font-size: 19px;
+}
+.so_tb{
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 5px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.so_tb >p{
+   font-size: 12px;
+   margin-left: -13px;
+   margin-top: -14px;
+   color: rgb(241, 12, 12);
+   font-weight: bold
+}
+.chat_con i{
+    position: absolute;
+    color: white;
+    top: 5px;
+    margin-left: 5px;
+}

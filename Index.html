@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- https://fontawesome.com/v5/search?q=cart&o=r&m=free -->
+    <title>Shopee-Fake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="container">
+        <header>
+            <div class="colum1">
+                <div class="row1">
+                        <ul class="menu1">
+                            <li><a href="">Kênh người bán</a></li>
+                            <li><a href="">Trở thành Người bán shoppe</a></li>
+                            <li class="Taiungdung"><a href="" >Tải ứng dụng</a>
+                               <div class="taiungdung_box">
+                                <div class="TaiUngDung">
+                                    <img src="img/qr_taiSp.jpg" alt="">
+                                    <p> <i class="fab fa-apple"></i>App Store</p>
+                                    <p> <i class="fab fa-google-play" style="color: #312fc1"></i>Google Play</p>
+                                </div>
+                               </div>
+                               </li>
+                            <li><a href="">Kết nối </a> 
+                            <a href=""><i class="fab fa-facebook" style="color: #ffffff;" ></i></a> 
+                            <a href=""><i class="fab fa-instagram" style="color: #ffffff;"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+               
+                <div class="row2">
+                    <nav>
+                        <ul class="menu2">
+                            <li><a href=""><i class="far fa-bell"></i>Thông Báo</a></li>
+                            <li><a href=""><i class="far fa-question-circle"></i>Hỗ Trợ</a></li>
+                            <li class="TiengViet"><a href=""><i class="fas fa-globe"></i>Tiếng Việt<i class="fas fa-chevron-down" style="margin-left: 4px;"></i></a>
+                                <div class="triangle-up-box" >
+                                    <div class="triangle-up"></div>
+                                    <div class="box" >
+                                        <ul  class="language" onmouseout="nomal()"   >
+                                            <li class="tab-lag active tv">Tiếng Việt</li> <br>
+                                            <li class="tab-lag en">English</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <script>
+                                var tabs = document.querySelectorAll(".tab-lag")
+                                tabs.forEach((tab,index)=>{
+                                    tab.onmouseover = function(){
+                                        document.querySelector('.tab-lag.active').classList.remove('active')
+                                        this.classList.add('active')
+                                    }
+                                })
+                                function nomal(){
+                                    document.querySelector('.tab-lag.active.en').classList.remove('active')
+                                    document.querySelector('.tab-lag.tv').classList.add('active')}
+                            </script>
+                            <li class="dk"><a href="dangky.html">Đăng Ký</a></li>
+                            <li><a href="ĐangNhap.html">Đăng Nhập</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="colum2">
+                <div class="row3">
+                  <h1>Shopee</h1>
+                </div>
+                <div class="row4">
+                    <div class="timkiem">
+                        <input id="search" type="text" placeholder="Đăng ký và nhận voucher bạn mới đến 70k!"><i class="fas fa-search"></i>
+                    </div>
+                    <div class="list">
+                        <nav>
+                            <ul class="menu3">
+                                <li><a href="">NU Tam Thất</a></li>
+                                <li><a href="">Đồ Dùng Học Tập</a></li>
+                                <li><a href="">Sét Đồ Nữ</a></li>
+                                <li><a href="">Áo Croptop</a></li>
+                                <li><a href="">Đồ Ăn Vặt</a></li>
+                                <li><a href="">Mô Hình One Piece</a></li>
+                                <li><a href="">Gấu Bông</a></li>
+                                <li><a href="">Váy</a></li>
+                                <li><a href="">Giây Kháng Lực</a></li>
+                                <li><a href="">Giày cao gót</a></li>
+                                <li><a href="">Dép</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row5">
+                  <a href=""><i class="fas fa-shopping-cart" style="font-size:33px ;"></i></a> 
+                </div>
+            </div>
+        </header>
+        <div class="all">
+            <div class="banner">
+                <div class="all_anh">
+                    <div class="anhto">
+                        <img src="img/banner1.jpg" class="active_anhto" alt="">
+                        <img src="img/banner2.jpg" alt="">
+                        <img src="img/banner3.jpg" alt="">
+                        <img src="img/banner4.jpg" alt="">
+                        <img src="img/banner5.jpg" alt="">
+                        <div class="buttons">
+                            <span class="next1">&#10095;</span>
+                            <span class="prev1">&#10094;</span>
+                        </div>
+                        <div class="dotsContainer">
+                            <div onclick="switchImage(this)" class="dot active_dot" attr ='0'></div>
+                            <div onclick="switchImage(this)" class="dot" attr ='1'></div>
+                            <div onclick="switchImage(this)" class="dot" attr ='2'></div>
+                            <div onclick="switchImage(this)" class="dot" attr ='3'></div>
+                            <div onclick="switchImage(this)" class="dot" attr ='4'></div>
+                        </div>
+                    </div>
+                    
+                    <div class="anhnho">
+                        <div class="anhnho1">
+                            <img src="img/banner4.jpg" alt="">
+                        </div>
+                        <div class="anhnho2">
+                            <img src="img/banner5.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+               
+                <div class="uudai">
+                  <div class="uudai_con">
+                    <img src="img/sale.jpg" alt="">
+                    <p>Khung Giờ Săn Sale</p>
+                  </div>
+                  <div class="uudai_con">
+                    <img src="img/re.jpg" alt="">
+                    <p>Gì Cũng Rẻ-Mua Là Freeship</p>
+                  </div>
+                  <div class="uudai_con">
+                    <img src="img/free.jpg" alt="">
+                    <p>Miễn Phí Vận Chuyển</p>
+                  </div>
+                  <div class="uudai_con">
+                    <img src="img/magiamgia.jpg" alt="">
+                    <p>Mã Giảm Giá</p>
+                  </div>
+                  <div class="uudai_con">
+                    <img src="img/quocte.jpg" alt="">
+                    <p>Hàng Quốc Tế</p>
+                  </div>
+                  <div class="uudai_con">
+                    <img src="img/nap.jpg" alt="">
+                    <p>Nạp Điện Thoại</p>
+                  </div>
+                  <div class="uudai_con">
+                    <img src="img/giasoc.jpg" alt="">
+                    <p>Bắt Trend_Giá Sốc</p>
+                  </div>
+                  <div class="uudai_con">
+                    <img src="img/hanghieu.jpg" alt="">
+                    <p>Hàng Hiệu Giá Tốt</p>
+                  </div>
+                  <div class="uudai_con">
+                    <img src="img/Annotation 2023-04-13 233341.jpg" alt="">
+                    <p>Voucher Giảm Đến 200.000đ</p>
+                  </div>
+                </div>
+            </div>
+            <div id="quangcao">
+                <div id="tatqc">
+                    <i  class="fas fa-window-close tatqc" style="font-size: 25px;"></i>
+                </div>
+                <img src="img/quangcao.jpg" alt="">
+            </div>
+            <div id="over_fly">
+                
+            </div>
+            <div class="all_danhmuc">
+                <div class="Danhmuc">
+                    <h1>DANH MỤC</h1>
+                    <div class="all-danhmuccon">
+                        <a href="SanPham.html">
+                            <div class="danhmuc-con">
+                                <img src="img/ao.jpg" alt="">
+                                <p>Thời Trang Nam</p>
+                            </div>
+                        </a>
+                        <div class="danhmuc-con">
+                            <img src="img/xemay.jpg" alt="">
+                            <p>Ôtô & Xe Máy & Xe Đạp</p>
+                        </div>
+                        <div class="danhmuc-con">
+                            <img src="img/dt.jpg" alt="">
+                            <p>Điện Thoại & Phụ Kiện</p>
+                        </div>
+                        <div class="danhmuc-con">
+                            <img src="img/mayanh.jpg" alt="">
+                            <p>Máy Ảnh & Máy Quay Phim</p>
+                        </div>
+                        <div class="danhmuc-con">
+                            <img src="img/mt.jpg" alt="">
+                            <p>Máy Tính & Laptop</p>
+                        </div>
+                        <div class="danhmuc-con">
+                            <img src="img/ao.jpg" alt="">
+                            <p>Thời Trang Nam</p>
+                        </div>
+                        <div class="danhmuc-con">
+                            <img src="img/xemay.jpg" alt="">
+                            <p>Ôtô & Xe Máy & Xe Đạp</p>
+                        </div>
+                        <div class="danhmuc-con">
+                            <img src="img/dt.jpg" alt="">
+                            <p>Điện Thoại & Phụ Kiện</p>
+                        </div>
+                        <div class="danhmuc-con">
+                            <img src="img/mayanh.jpg" alt="">
+                            <p>Máy Ảnh & Máy Quay Phim</p>
+                        </div>
+                        <div class="danhmuc-con">
+                            <img src="img/mt.jpg" alt="">
+                            <p>Máy Tính & Laptop</p>
+                        </div>
+                        <div class="danhmuc-con">
+                            <img src="img/ao.jpg" alt="">
+                            <p>Thời Trang Nam</p>
+                        </div>
+                        <div class="danhmuc-con">
+                            <img src="img/xemay.jpg" alt="">
+                            <p>Ôtô & Xe Máy & Xe Đạp</p>
+                        </div>
+                        <div class="danhmuc-con">
+                            <img src="img/dt.jpg" alt="">
+                            <p>Điện Thoại & Phụ Kiện</p>
+                        </div>
+                        <div class="danhmuc-con">
+                            <img src="img/mayanh.jpg" alt="">
+                            <p>Máy Ảnh & Máy Quay Phim</p>
+                        </div>
+                        <div class="danhmuc-con">
+                            <img src="img/mt.jpg" alt="">
+                            <p>Máy Tính & Laptop</p>
+                        </div>
+                        <div class="danhmuc-con">
+                            <img src="img/ao.jpg" alt="">
+                            <p>Thời Trang Nam</p>
+                        </div>
+                        <div class="danhmuc-con">
+                            <img src="img/xemay.jpg" alt="">
+                            <p>Ôtô & Xe Máy & Xe Đạp</p>
+                        </div>
+                        <div class="danhmuc-con">
+                            <img src="img/dt.jpg" alt="">
+                            <p>Điện Thoại & Phụ Kiện</p>
+                        </div>
+                        <div class="danhmuc-con">
+                            <img src="img/mayanh.jpg" alt="">
+                            <p>Máy Ảnh & Máy Quay Phim</p>
+                        </div>
+                        <div class="danhmuc-con">
+                            <img src="img/mt.jpg" alt="">
+                            <p>Máy Tính & Laptop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flash_sale">
+                    <div class="tieude1">
+                        <h1>FLASH SALE</h1>
+                        <div class="time">
+                            <div class="item">
+                                <div id="day">05</div>
+                            </div>
+                            <div class="item">
+                                <div id="hour">12</div> 
+                            </div>
+                            <div class="item">
+                                <div id="minute">30</div> 
+                            </div>
+                            <div class="item">
+                                <div id="seconds">12</div>
+                            </div>
+                        </div>
+                        <p>Xem Tất Cả <i class="fas fa-angle-right"></i> </p>
+                    </div>
+                    <div class="buttons">
+                        <span class="next">&#10095;</span>
+                        <span class="prev">&#10094;</span>
+                    </div>
+                    <div class="sp_sale active_fsale">
+                        <div class="sp_sale_con">
+                            <img src="img/lovisong.jpg" alt="">
+                            <p><sup><u> đ</u></sup>1.265.000 </p>
+                            <h4> <i class="fas fa-fire-alt"></i>HẾT HÀNG</h4>
+                        </div>
+                        <div class="sp_sale_con">
+                            <img src="img/lovisong.jpg" alt="">
+                            <p><sup><u> đ</u></sup>1.265.000 </p>
+                            <h4> <i class="fas fa-fire-alt"></i>HẾT HÀNG</h4>
+                        </div>
+                        <div class="sp_sale_con">
+                            <img src="img/lovisong.jpg" alt="">
+                            <p><sup><u> đ</u></sup>331.000 </p>
+                            <h4> <i class="fas fa-fire-alt"></i>HẾT HÀNG</h4>
+                        </div>
+                        <div class="sp_sale_con">
+                            <img src="img/donny.jpg" alt="">
+                            <p><sup><u> đ</u></sup>331.000 </p>
+                            <h4> <i class="fas fa-fire-alt"></i>HẾT HÀNG</h4>
+                        </div>
+                        <div class="sp_sale_con">
+                            <img src="img/sua.jpg" alt="">
+                            <p><sup><u> đ</u></sup>1.359.000</p>
+                            <h4> <i class="fas fa-fire-alt"></i>HẾT HÀNG</h4>
+                        </div>
+                        <div class="sp_sale_con">
+                            <img src="img/donny.jpg" alt="">
+                            <p><sup><u> đ</u></sup>222.000 </p>
+                            <h4> <i class="fas fa-fire-alt"></i>HẾT HÀNG</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="sp_sale">
+                        <div class="sp_sale_con">
+                            <img src="img/spsale.jpg" alt="">
+                            <p><sup><u> đ</u></sup>331.000 </p>
+                            <h4> <i class="fas fa-fire-alt"></i>HẾT HÀNG</h4>
+                        </div>
+                        <div class="sp_sale_con">
+                            <img src="img/lovisong.jpg" alt="">
+                            <p><sup><u> đ</u></sup>331.000 </p>
+                            <h4> <i class="fas fa-fire-alt"></i>HẾT HÀNG</h4>
+                        </div>
+                        <div class="sp_sale_con">
+                            <img src="img/donny.jpg" alt="">
+                            <p><sup><u> đ</u></sup>331.000 </p>
+                            <h4> <i class="fas fa-fire-alt"></i>HẾT HÀNG</h4>
+                        </div>
+                        <div class="sp_sale_con">
+                            <img src="img/sua.jpg" alt="">
+                            <p><sup><u> đ</u></sup>1.359.000</p>
+                            <h4> <i class="fas fa-fire-alt"></i>HẾT HÀNG</h4>
+                        </div>
+                        <div class="sp_sale_con">
+                            <img src="img/donny.jpg" alt="">
+                            <p><sup><u> đ</u></sup>222.000 </p>
+                            <h4> <i class="fas fa-fire-alt"></i>HẾT HÀNG</h4>
+                        </div>
+                        <div class="sp_sale_con">
+                            <img src="img/lovisong.jpg" alt="">
+                            <p><sup><u> đ</u></sup>1.265.000 </p>
+                            <h4> <i class="fas fa-fire-alt"></i>HẾT HÀNG</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-nho">
+                    <div class="banner-con">
+                       <a href=""><img src="img/bannernho1.jpg" alt=""></a> 
+                    </div>
+                    <div class="banner-con">
+                        <a href=""><img src="img/bannernho2.jpg" alt=""></a> 
+                    </div>
+                    <div class="banner-con">
+                        <a href=""><img src="img/bannernho3.jpg" alt=""></a> 
+                    </div>
+                </div>
+                <div class="shopee_mall">
+                    <div class="list1">
+                        <div class="menu">
+                            <ul>
+                                <li><a style="font-size: 20px; color: red;" href="">SHOPEE MALL</a> </li>
+                                <li><i class="fas fa-reply"></i>7 Ngày Miễn Phí Trả Hàng</li>
+                                <li><i class="fas fa-check-circle"></i>Hàng Chính Hãng 100%</li>
+                                <li><i class="fas fa-truck"></i>Miễn Phí Vận Chuyển</li>
+                            </ul>
+                        </div>
+                        <div class="xemtatca">
+                            <p>Xem Tất Cả <i class="fas fa-angle-right"></i></p>
+                        </div>
+                    </div>
+                    <div class="sidebar_sp">
+                        <div class="sidebar">
+                           <a href=""><img src="img/sidebar.jpg" alt=""></a> 
+                        </div>
+                        <div class="sp">
+                            <a href=""> 
+                                <div class="sp-con">
+                                <img src="img/sp-con.jpg" alt="">
+                                <img class="a" src="img/sp-con3'.jpg" alt="">
+                            </a>
+                                <p>Tã xịn quà xinh</p>
+                            </div>
+                            <div class="sp-con">
+                                <img src="img/sp-con3.jpg" alt="">
+                                <img class="a" src="img/sp-con2'.jpg" alt="">
+                                <p>Voucher đơn 0đ</p>
+                            </div>
+                            <div class="sp-con">
+                                <img src="img/sp-con2.jpg" alt="">
+                                <img class="a" src="img/sp-con2'.jpg" alt="">
+                                <p>Giảm Đến 40%</p>
+                            </div>
+                            <div class="sp-con">
+                                <img src="img/sp-con.jpg" alt="">
+                                <img class="a" src="img/sp-con'.jpg" alt="">
+                                <p>Tã xịn quà xinh</p>
+                            </div>
+                            <div class="sp-con">
+                                <img src="img/sp-con2.jpg" alt="">
+                                <img class="a" src="img/sp-con2'.jpg" alt="">
+                                <p>Voucher đơn 20.000đ</p>
+                            </div>
+                            <div class="sp-con">
+                                <img src="img/sp-con3.jpg" alt="">
+                                <img class="a" src="img/sp-con3'.jpg" alt="">
+                                <p>Giảm Đến 50%</p>
+                            </div>
+                            <div class="sp-con">
+                                <img src="img/sp-con3.jpg" alt="">
+                                <img class="a" src="img/sp-con3'.jpg" alt="">
+                                <p>Giảm Đến 80%</p>
+                            </div>
+                            <div class="sp-con">
+                                <img src="img/sp-con2.jpg" alt="">
+                                <img class="a" src="img/sp-con2'.jpg" alt="">
+                                <p>Voucher đơn 50.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Timkiemhangdau">
+                    <p>TÌM KIẾM HÀNG ĐẦU</p>
+                    <div class="list-sp-con">
+                        <img src="img/sp-hangdau.jpg" alt="">
+                        <p>Túi Xách Nữ</p>
+                    </div>
+                    <div class="list-sp-con">
+                        <img src="img/sp-hangdau2.jpg" alt="">
+                        <p>Nước Giặt Cao Cấp</p>
+                    </div>
+                    <div class="list-sp-con">
+                        <img src="img/sp-hangdau3.jpg" alt="">
+                        <p>Ốp Lưng Cao Cấp</p>
+                    </div>
+                    <div class="list-sp-con">
+                        <img src="img/sp-hangdau.jpg" alt="">
+                        <p>Túi Xách Nữ</p>
+                    </div>
+                    <div class="list-sp-con">
+                        <img src="img/sp-hangdau2.jpg" alt="">
+                        <p>Nước Giặt Cao Cấp</p>
+                    </div>
+                    <div class="list-sp-con">
+                        <img src="img/sp-hangdau1.jpg" alt="">
+                        <p>Giây Nhảy Thể Dục</p>
+                    </div>
+                </div>
+                <div class="goi-y-hom-nay">
+                    <p>GỢI Ý HÔM NAY</p>
+                    <hr color="red" size="7px">
+                    <div class="goiy-spcon">
+                        <img src="img/goiy2.jpg" alt="">
+                        <p class="tieude">Kẹp Tóc Hình Vịt Con Dễ Thương Cho Bé</p>
+                        <p class="sale">Chờ</p>
+                        <p class="gia">1.000 <sup>đ</sup></p>
+                        <p class="tinhtrang">Đã bán 1,5k</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                    </div>
+                    <div class="goiy-spcon">
+                        <img src="img/goiy.jpg" alt="">
+                        <p class="tieude">Kẹp Tóc Hình Vịt Con Dễ Thương Cho Bé</p>
+                        <p class="sale">85.000 lúc 8:00</p>
+                        <p class="gia">1.000 <sup>đ</sup></p>
+                        <p class="tinhtrang">Đã bán 1,5k</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                    </div>
+                    <div class="goiy-spcon">
+                        <img src="img/goiy2.jpg" alt="">
+                        <p class="tieude">Kẹp Tóc Hình Vịt Con Dễ Thương Cho Bé</p>
+                        <p class="sale">Chờ</p>
+                        <p class="gia">1.000 <sup>đ</sup></p>
+                        <p class="tinhtrang">Đã bán 1,5k</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                    </div>
+                    <div class="goiy-spcon">
+                        <img src="img/goiy2.jpg" alt="">
+                        <p class="tieude">Kẹp Tóc Hình Vịt Con Dễ Thương Cho Bé</p>
+                        <p class="sale">Chờ</p>
+                        <p class="gia">1.000 <sup>đ</sup></p>
+                        <p class="tinhtrang">Đã bán 1,5k</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                    </div>
+                    <div class="goiy-spcon">
+                        <img src="img/goiy.jpg" alt="">
+                        <p class="tieude">Búi Tóc Hình Vịt Con Dễ Thương Cho Bé</p>
+                        <p class="sale">Chờ</p>
+                        <p class="gia">1.000 <sup>đ</sup></p>
+                        <p class="tinhtrang">Đã bán 1,5k</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                    </div>
+                    <div class="goiy-spcon">
+                        <img src="img/goiy1.jpg" alt="">
+                        <p class="tieude">Kẹp Tóc Hình Vịt Con Dễ Thương Cho Bé</p>
+                        <p class="sale">Chờ</p>
+                        <p class="gia">1.000 <sup>đ</sup></p>
+                        <p class="tinhtrang">Đã bán 1,5k</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                    </div>
+                    <div class="goiy-spcon">
+                        <img src="img/goiy2.jpg" alt="">
+                        <p class="tieude">Kẹp Tóc Hình Vịt Con Dễ Thương Cho Bé</p>
+                        <p class="sale">Chờ</p>
+                        <p class="gia">1.000 <sup>đ</sup></p>
+                        <p class="tinhtrang">Đã bán 1,5k</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                    </div>
+                    <div class="goiy-spcon">
+                        <img src="img/goiy1.jpg" alt="">
+                        <p class="tieude">Kẹp Tóc Hình Vịt Con Dễ Thương Cho Bé</p>
+                        <p class="sale">85.000 lúc 8:00</p>
+                        <p class="gia">1.000 <sup>đ</sup></p>
+                        <p class="tinhtrang">Đã bán 1,5k</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                    </div>
+                    <div class="goiy-spcon">
+                        <img src="img/goiy2.jpg" alt="">
+                        <p class="tieude">Kẹp Tóc Hình Vịt Con Dễ Thương Cho Bé</p>
+                        <p class="sale">Chờ</p>
+                        <p class="gia">1.000 <sup>đ</sup></p>
+                        <p class="tinhtrang">Đã bán 1,5k</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                    </div>
+                    <div class="goiy-spcon">
+                        <img src="img/goiy.jpg" alt="">
+                        <p class="tieude">Kẹp Tóc Hình Vịt Con Dễ Thương Cho Bé</p>
+                        <p class="sale">Chờ</p>
+                        <p class="gia">1.000 <sup>đ</sup></p>
+                        <p class="tinhtrang">Đã bán 1,5k</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                    </div>
+                    <div class="goiy-spcon">
+                        <img src="img/goiy2.jpg" alt="">
+                        <p class="tieude">Kẹp Tóc Hình Vịt Con Dễ Thương Cho Bé</p>
+                        <p class="sale">Chờ</p>
+                        <p class="gia">1.000 <sup>đ</sup></p>
+                        <p class="tinhtrang">Đã bán 1,5k</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                    </div>
+                    <div class="goiy-spcon">
+                        <img src="img/goiy1.jpg" alt="">
+                        <p class="tieude">Kẹp Tóc Hình Vịt Con Dễ Thương Cho Bé</p>
+                        <p class="sale">Chờ</p>
+                        <p class="gia">1.000 <sup>đ</sup></p>
+                        <p class="tinhtrang">Đã bán 1,5k</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                    </div>
+                    <div class="goiy-spcon">
+                        <img src="img/goiy2.jpg" alt="">
+                        <p class="tieude">Kẹp Tóc Hình Vịt Con Dễ Thương Cho Bé</p>
+                        <p class="sale">Chờ</p>
+                        <p class="gia">1.000 <sup>đ</sup></p>
+                        <p class="tinhtrang">Đã bán 1,5k</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                    </div>
+                    <div class="goiy-spcon">
+                        <img src="img/goiy3.jpg" alt="">
+                        <p class="tieude">Kẹp Tóc Hình Vịt Con Dễ Thương Cho Bé</p>
+                        <p class="sale">Chờ</p>
+                        <p class="gia">1.000 <sup>đ</sup></p>
+                        <p class="tinhtrang">Đã bán 1,5k</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                    </div>
+                    <div class="goiy-spcon">
+                        <img src="img/goiy3.jpg" alt="">
+                        <p class="tieude">Kẹp Tóc Hình Vịt Con Dễ Thương Cho Bé</p>
+                        <p class="sale">Chờ</p>
+                        <p class="gia">1.000 <sup>đ</sup></p>
+                        <p class="tinhtrang">Đã bán 1,5k</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                    </div>
+                    <div class="goiy-spcon">
+                        <img src="img/goiy3.jpg" alt="">
+                        <p class="tieude">Kẹp Tóc Hình Vịt Con Dễ Thương Cho Bé</p>
+                        <p class="sale">Chờ</p>
+                        <p class="gia">1.000 <sup>đ</sup></p>
+                        <p class="tinhtrang">Đã bán 1,5k</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                    </div>
+                    <div class="goiy-spcon">
+                        <img src="img/goiy3.jpg" alt="">
+                        <p class="tieude">Kẹp Tóc Hình Vịt Con Dễ Thương Cho Bé</p>
+                        <p class="sale">Chờ</p>
+                        <p class="gia">1.000 <sup>đ</sup></p>
+                        <p class="tinhtrang">Đã bán 1,5k</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                    </div>
+                    <div class="goiy-spcon">
+                        <img src="img/goiy3.jpg" alt="">
+                        <p class="tieude">Kẹp Tóc Hình Vịt Con Dễ Thương Cho Bé</p>
+                        <p class="sale">Chờ</p>
+                        <p class="gia">1.000 <sup>đ</sup></p>
+                        <p class="tinhtrang">Đã bán 1,5k</p>
+                        <p class="sptuongtu">Tìm sản phẩm tương tự</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="CHAT">
+            <p>Chat</p>
+            <div class="icon">
+                <i class="fas fa-sign-out-alt in"></i>
+                <i class="fas fa-arrow-alt-circle-left out"></i>
+                <i class="far fa-caret-square-down"></i>
+            </div> 
+           
+            <div class="all_chat">
+                <div class="ten_Chat">
+                    <i class="fas fa-search"></i><input class="timKiem_chat" type="text" placeholder="Tìm kiếm">
+                    <select name="" id="luachon">
+                        <option value="">Tất cả</option>
+                        <option value="">Chưa đọc</option>
+                        <option value="">Đã Ghim</option>
+                    </select>
+                    <div class="list_Chat">
+                        <div class="list_chat lchat_active" style="background-color: white; position: absolute; top: 1px; width: 0px;height: 0px;"  >
+                            
+                        </div>
+                        <div class="list_chat  ">
+                            <div class="logo_shops">
+                                <i class="fab fa-wordpress"></i>
+                            </div>
+                            <div class="noidung_shops">
+                                <p class="ten_shop1">zenkonu1</p>
+                                <p>Loại tin nhắn không...</p>
+                            </div>
+                          
+                        </div>
+                        <div class="list_chat ">
+                            <div class="logo_shops">
+                                <i class="fab fa-wordpress"></i>
+                            </div>
+                            <div class="noidung_shops">
+                                <p class="ten_shop2">zenkonu2</p>
+                                <p>Loại tin nhắn không...</p>
+                            </div>
+                        </div>
+                        <div class="list_chat ">
+                            <div class="logo_shops">
+                                <i class="fab fa-wordpress"></i>
+                            </div>
+                            <div class="noidung_shops">
+                                <p class="ten_shop3">zenkonu3</p>
+                                <p>Loại tin nhắn không...</p>
+                            </div>
+                        </div>
+                        <div class="list_chat ">
+                            <div class="logo_shops">
+                                <i class="fab fa-wordpress"></i>
+                            </div>
+                            <div class="noidung_shops">
+                                <p class="ten_shop4">zenkonu4</p>
+                                <p>Loại tin nhắn không...</p>
+                            </div>
+                        </div>
+                        <div class="list_chat ">
+                            <div class="logo_shops">
+                                <i class="fab fa-wordpress"></i>
+                            </div>
+                            <div class="noidung_shops">
+                                <p class="ten_shop5">zenkonu5</p>
+                                <p>Loại tin nhắn không...</p>
+                            </div>
+                        </div>
+                        <div class="list_chat ">
+                            <div class="logo_shops">
+                                <i class="fab fa-wordpress"></i>
+                            </div>
+                            <div class="noidung_shops">
+                                <p class="ten_shop6">zenkonu6</p>
+                                <p>Loại tin nhắn không...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="noidung_chat">
+                    <p></p> <i class="fas fa-chevron-down"></i>
+                    <hr>
+                    <div class="noi_dung_chat  fb_active">
+                       <img src="img/anh_chat.jpg" alt="">
+                    </div>
+                    <div class="noi_dung_chat  ">
+                        <div class="van_ban_chat">
+                            <p>1 Văn bản là một loại hình phương tiện để ghi nhận, lưu giữ và truyền đạt các thông tin từ chủ thể này sang chủ thể khác bằng ký hiệu gọi là chữ viết. Nó gồm tập hợp các câu có tính trọn vẹn về nội dung, hoàn chỉnh về hình thức, có tính liên kết chặt chẽ và hướng tới một mục tiêu giao tiếp nhất định.[1][2][3][4] Hay nói khác đi, văn bản là một dạng sản phẩm của hoạt động giao tiếp bằng ngôn ngữ được thể hiện ở dạng viết trên một chất liệu nào đó (giấy, bia đá,...). Văn bản bao gồm các tài liệu, tư liệu, giấy tờ có giá trị pháp lý nhất định, được sử dụng trong hoạt động của các cơ quan Nhà nước, các tổ chức chính trị, chính trị - xã hội, các tổ chức kinh tế... như: các văn bản pháp luật, các công văn, tài liệu, giấy tờ.</p>
+                        </div>
+                        <div class=" nd_FB feed_back_nd1">
+                            
+                        </div>
+                    </div>
+                    <div class="noi_dung_chat ">
+                        <div class="van_ban_chat">
+                            <p>2 Văn bản là một loại hình phương tiện để ghi nhận, lưu giữ và truyền đạt các thông tin từ chủ thể này sang chủ thể khác bằng ký hiệu gọi là chữ viết. Nó gồm tập hợp các câu có tính trọn vẹn về nội dung, hoàn chỉnh về hình thức, có tính liên kết chặt chẽ và hướng tới một mục tiêu giao tiếp nhất định.[1][2][3][4] Hay nói khác đi, văn bản là một dạng sản phẩm của hoạt động giao tiếp bằng ngôn ngữ được thể hiện ở dạng viết trên một chất liệu nào đó (giấy, bia đá,...). Văn bản bao gồm các tài liệu, tư liệu, giấy tờ có giá trị pháp lý nhất định, được sử dụng trong hoạt động của các cơ quan Nhà nước, các tổ chức chính trị, chính trị - xã hội, các tổ chức kinh tế... như: các văn bản pháp luật, các công văn, tài liệu, giấy tờ.</p>
+                        </div>
+                        <div class="nd_FB feed_back_nd2">
+                            
+                        </div>
+                    </div>
+                    <div class="noi_dung_chat ">
+                        <div class="van_ban_chat">
+                            <p>3 Văn bản là một loại hình phương tiện để ghi nhận, lưu giữ và truyền đạt các thông tin từ chủ thể này sang chủ thể khác bằng ký hiệu gọi là chữ viết. Nó gồm tập hợp các câu có tính trọn vẹn về nội dung, hoàn chỉnh về hình thức, có tính liên kết chặt chẽ và hướng tới một mục tiêu giao tiếp nhất định.[1][2][3][4] Hay nói khác đi, văn bản là một dạng sản phẩm của hoạt động giao tiếp bằng ngôn ngữ được thể hiện ở dạng viết trên một chất liệu nào đó (giấy, bia đá,...). Văn bản bao gồm các tài liệu, tư liệu, giấy tờ có giá trị pháp lý nhất định, được sử dụng trong hoạt động của các cơ quan Nhà nước, các tổ chức chính trị, chính trị - xã hội, các tổ chức kinh tế... như: các văn bản pháp luật, các công văn, tài liệu, giấy tờ.</p>
+                        </div>
+                        <div class="nd_FB feed_back_nd3">
+                          
+                        </div>
+                    </div>
+                    <div class="noi_dung_chat ">
+                        <div class="van_ban_chat">
+                            <p>4 Văn bản là một loại hình phương tiện để ghi nhận, lưu giữ và truyền đạt các thông tin từ chủ thể này sang chủ thể khác bằng ký hiệu gọi là chữ viết. Nó gồm tập hợp các câu có tính trọn vẹn về nội dung, hoàn chỉnh về hình thức, có tính liên kết chặt chẽ và hướng tới một mục tiêu giao tiếp nhất định.[1][2][3][4] Hay nói khác đi, văn bản là một dạng sản phẩm của hoạt động giao tiếp bằng ngôn ngữ được thể hiện ở dạng viết trên một chất liệu nào đó (giấy, bia đá,...). Văn bản bao gồm các tài liệu, tư liệu, giấy tờ có giá trị pháp lý nhất định, được sử dụng trong hoạt động của các cơ quan Nhà nước, các tổ chức chính trị, chính trị - xã hội, các tổ chức kinh tế... như: các văn bản pháp luật, các công văn, tài liệu, giấy tờ.</p>
+                        </div>
+                        <div class=" nd_FB feed_back_nd4">
+                           
+                        </div>
+                    </div>
+                    <div class="noi_dung_chat ">
+                        <div class="van_ban_chat">
+                            <p>5 Văn bản là một loại hình phương tiện để ghi nhận, lưu giữ và truyền đạt các thông tin từ chủ thể này sang chủ thể khác bằng ký hiệu gọi là chữ viết. Nó gồm tập hợp các câu có tính trọn vẹn về nội dung, hoàn chỉnh về hình thức, có tính liên kết chặt chẽ và hướng tới một mục tiêu giao tiếp nhất định.[1][2][3][4] Hay nói khác đi, văn bản là một dạng sản phẩm của hoạt động giao tiếp bằng ngôn ngữ được thể hiện ở dạng viết trên một chất liệu nào đó (giấy, bia đá,...). Văn bản bao gồm các tài liệu, tư liệu, giấy tờ có giá trị pháp lý nhất định, được sử dụng trong hoạt động của các cơ quan Nhà nước, các tổ chức chính trị, chính trị - xã hội, các tổ chức kinh tế... như: các văn bản pháp luật, các công văn, tài liệu, giấy tờ.</p>
+                        </div>
+                        <div class="nd_FB feed_back_nd5">
+                           
+                        </div>
+                    </div>
+                    <div class="noi_dung_chat ">
+                        <div class="van_ban_chat">
+                            <p>6 Văn bản là một loại hình phương tiện để ghi nhận, lưu giữ và truyền đạt các thông tin từ chủ thể này sang chủ thể khác bằng ký hiệu gọi là chữ viết. Nó gồm tập hợp các câu có tính trọn vẹn về nội dung, hoàn chỉnh về hình thức, có tính liên kết chặt chẽ và hướng tới một mục tiêu giao tiếp nhất định.[1][2][3][4] Hay nói khác đi, văn bản là một dạng sản phẩm của hoạt động giao tiếp bằng ngôn ngữ được thể hiện ở dạng viết trên một chất liệu nào đó (giấy, bia đá,...). Văn bản bao gồm các tài liệu, tư liệu, giấy tờ có giá trị pháp lý nhất định, được sử dụng trong hoạt động của các cơ quan Nhà nước, các tổ chức chính trị, chính trị - xã hội, các tổ chức kinh tế... như: các văn bản pháp luật, các công văn, tài liệu, giấy tờ.</p>
+                        </div>
+                        <div class="nd_FB feed_back_nd6">
+                           
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <input class="input_FB" type="text" placeholder="Nhập nội dung tin nhắn"><i class="fas fa-paper-plane"></i>
+                        <div class="feedback_logo">
+                            <i class="far fa-laugh" title="Sticker"></i>
+                            <i class="fas fa-photo-video " title="Hình ảnh"></i>
+                            <i class="far fa-play-circle" title="Video"></i>
+                            <i class="fab fa-product-hunt" title="Sản phẩm"></i>
+                            <i class="fas fa-folder-open" title="Đơn hàng"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat_con">
+                <p>Chat <i class="fas fa-comment-alt"></i></p>
+                <div class="so_tb">
+                     <p class="so_list_chat">11</p>
+                </div>
+        </div>
+        <footer>
+    
+        </footer>
+    </div>
+    <script>
+        const  quangcao = document.getElementById('quangcao')
+        setTimeout(function(){
+            quangcao.style.display = 'block';
+            document.getElementById('over_fly').style.display='block'
+            
+        },1000)
+        const  closei =  document.getElementById('tatqc')
+        closei.addEventListener('click', function() {
+            quangcao.style.display = 'none';
+            document.getElementById('over_fly').style.display='none'
+        })
+
+           
+            var fa_search = document.querySelector('.fa-search')
+            fa_search.addEventListener('click',function(){
+                let nameElemant = document.querySelectorAll('.tieude')
+                console.log(nameElemant)
+                let carts =document.querySelectorAll('.goiy-spcon')
+                console.log(carts)
+                let valueInput = document.querySelector('input').value ;
+                console.log(valueInput)
+            nameElemant.forEach(function(e , index){
+               if(e.innerText.toLowerCase().includes(valueInput.toLowerCase())){
+                    carts[index].classList.remove('hiden')
+               }else{
+                    carts[index].classList.add('hiden')
+               }
+            })
+        })
+
+        let slideImages = document.querySelectorAll('.sp_sale')
+        let slideImangBanne_box = document.querySelector('.anhto')
+        let slideImgbanner = slideImangBanne_box.querySelectorAll('img')
+        let next = document.querySelector('.next')
+        let prev = document.querySelector('.prev')
+        let next1 = document.querySelector('.next1')
+        let prev1 = document.querySelector('.prev1')
+        let dots = document.querySelectorAll('.dot')
+
+        var counter = 0 ;
+       
+        next.addEventListener('click', slidenext)
+        function slidenext(){
+            slideImages[counter].style.animation = 'next1 0.5s ease-in forwards'
+             document. querySelector('.prev').style.display = 'block'
+            if(counter >= slideImages.length -1 ){
+                counter = 0;
+            }else{
+                counter++
+            }
+            slideImages[counter].style.animation = 'next2 0.5s ease-in forwards'
+             document. querySelector('.next').style.display = 'none'
+            indiacatort()
+        }
+        
+
+        prev.addEventListener('click', function(){
+            slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards'
+             document. querySelector('.prev').style.display = 'none'
+            if(counter == 0 ){
+                counter = slideImages.length -1;
+            }else{
+                counter--;
+            }
+            slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards'
+             document. querySelector('.next').style.display = 'block'
+            indiacatort()
+        })
+
+        var counter1 = 0 ;
+        next1.addEventListener('click', slidenext1)
+        function slidenext1(){
+            slideImgbanner[counter1].style.animation = 'next1 0.5s ease-in forwards'
+            if(counter1 >= slideImgbanner.length -1 ){
+                counter1 = 0;
+            }else{
+                counter1++
+            }
+            slideImgbanner[counter1].style.animation = 'next2 0.5s ease-in forwards'
+            indiacatort()
+        }
+        
+
+        prev1.addEventListener('click', function(){
+            slideImgbanner[counter1].style.animation = 'prev1 0.5s ease-in forwards'
+            if(counter1 == 0 ){
+                counter1 = slideImgbanner.length -1;
+            }else{
+                counter1--;
+            }
+            slideImgbanner[counter1].style.animation = 'prev2 0.5s ease-in forwards'
+            indiacatort()
+        })
+
+        function auto(){
+            deletInterval = setInterval(timer , 3000);
+            function timer(){
+                slidenext1();
+                indiacatort()
+            }
+         }
+        auto();
+        slideImangBanne_box.addEventListener('mouseover', function(){
+            clearInterval(deletInterval)
+        })
+         
+        slideImangBanne_box.addEventListener('mouseout',auto)
+
+        function indiacatort(){
+            for(var i = 0 ; i < dots.length ; i++){
+                dots[i].className = dots[i].className.replace(' active_dot', '');
+            }
+            dots[counter1].className += ' active_dot';
+        }
+
+        function switchImage(curentImage){
+            curentImage.classList.add('active_dot');
+            var imageId = curentImage.getAttribute('attr');
+            if(imageId > counter1){
+                slideImgbanner[counter1].style.animation = 'next1 0.5s ease-in forwards'
+                counter1 = imageId;
+                slideImgbanner[counter1].style.animation = 'next2 0.5s ease-in forwards'
+            }
+            else if(imageId == counter1){
+                return;
+            }
+            else{
+                slideImgbanner[counter1].style.animation = 'prev1 0.5s ease-in forwards'
+                counter1 = imageId;
+                slideImgbanner[counter1].style.animation = 'prev2 0.5s ease-in forwards'
+            }
+            indiacatort();
+        }
+        document.querySelector('.claas').style.color = ' red'
+
+                            // flash shale
+        let endDate = new Date("09/18/2023 00:00:00").getTime();
+        let check = setInterval(function(){
+        let now = new Date().getTime();
+        let distance = endDate - now;
+       // console.log(distance)
+        let a =' 0'
+         // chuyển mms về ngày , giờ , phút , giây
+        let day = Math.floor(distance / (24*60*60*1000));
+        //console.log(day)
+        let hour = Math.floor((distance % (24*60*60*1000)) / (60* 60*1000));
+        let minute = Math.floor((distance % (60* 60*1000)) / (60*1000));
+        let seconds = Math.floor((distance % (60*1000)) / 1000);
+        day = (day < 10) ? "0" + day : day;
+        hour = (hour < 10) ? "0" + hour : hour;
+        minute = (minute < 10) ? "0" + minute : minute;
+        seconds = (seconds < 10) ? "0" + seconds : seconds;
+        document.getElementById('day').innerText = day;
+        document.getElementById('hour').innerText = hour;
+        document.getElementById('minute').innerText = minute;
+        document.getElementById('seconds').innerText = seconds;
+        if(distance <= 0){
+            clearInterval(check);
+        }
+    }, 1000);
+
+                        //CHAT
+    var timkiem_chat = document.querySelector('.timKiem_chat')
+    timkiem_chat.addEventListener('click', function(){
+        document.querySelector('.timKiem_chat').style.width ='200px'
+        document.querySelector('#luachon').style.visibility = 'hidden'
+    })
+     
+    var chat_con = document.querySelector('.chat_con')
+    var chat_to = document.querySelector('.CHAT')
+    var an_chat_to = document.querySelector('.fa-caret-square-down')
+    chat_con.addEventListener('click', function(){
+        document.querySelector('.CHAT').style.display = 'block'
+        chat_con = document.querySelector('.chat_con').style.display = 'none'
+        document.querySelector('.CHAT').style.animation = "reSize1  0.2s ease-in forwards"
+
+    })
+    an_chat_to.addEventListener('click', function(){
+        document.querySelector('.CHAT').style.animation = "reSize2 0.2s ease-in forwards"
+        chat_con = document.querySelector('.chat_con').style.display = 'block'
+        document.querySelector('.out').style.visibility = 'hidden'
+        document.querySelector('.in').style.visibility = 'visible'
+        document.querySelector('.CHAT').style.animation ="reSize2 0.2s ease-in forwards"
+        document.querySelector('.noidung_chat').style.display = ' block'
+        document.querySelector('#luachon').style.visibility = 'visible'
+        document.querySelector('.timKiem_chat').style.width = '140px'
+        document.querySelector('.icon').style.marginLeft  = '500px'
+        timkiem_chat.addEventListener('click', function(){
+        document.querySelector('.timKiem_chat').style.width ='200px'
+         })
+    })
+    document.querySelector('.out').style.visibility = 'hidden'
+    var thu_gon = document.querySelector('.fa-sign-out-alt')
+    thu_gon.addEventListener('click',  function(){
+        document.querySelector('.CHAT').style.animation ="reSize3 0.2s ease-in forwards"
+        document.querySelector('.noidung_chat').style.display = ' none'
+        document.querySelector('.ten_Chat').style.width = '250px'
+        document.querySelector('.timKiem_chat').style.width = '130px'
+        document.querySelector('.out').style.visibility = 'visible'
+        document.querySelector('.in').style.visibility = 'hidden'
+        document.querySelector('#luachon').style.visibility = 'visible'
+        document.querySelector('.icon').style.marginLeft  = '140px'
+        timkiem_chat.addEventListener('click', function(){
+        document.querySelector('.timKiem_chat').style.width ='170px'
+         })
+    })
+    var mo_ra = document.querySelector('.out')
+    mo_ra.addEventListener('click', function(){
+        document.querySelector('.out').style.visibility = 'hidden'
+        document.querySelector('.in').style.visibility = 'visible'
+        document.querySelector('.CHAT').style.animation ="reSize4 0.2s ease-in forwards"
+        document.querySelector('.noidung_chat').style.display = ' block'
+        document.querySelector('#luachon').style.visibility = 'visible'
+        document.querySelector('.timKiem_chat').style.width = '140px'
+        document.querySelector('.icon').style.marginLeft  = '500px'
+        timkiem_chat.addEventListener('click', function(){
+        document.querySelector('.timKiem_chat').style.width ='200px'
+         })
+    })
+        // đến số thông bao
+    var list_Chat = document.querySelectorAll('.list_chat ')
+    var so_listchat = list_Chat.length -1 ;
+    so_listchat = (so_listchat < 10) ? "0" + so_listchat : so_listchat;
+    document.querySelector('.so_list_chat').innerText = so_listchat
+   
+    // feedBack
+    const $ = document.querySelector.bind(document);
+    const $$ = document.querySelectorAll.bind(document);
+    const list_chats = $$(".list_chat");
+    document.querySelector('.feedback').style.display = 'none'
+    document.querySelector('.noidung_chat').style.height = '500px'
+    document.querySelector('.noidung_chat').style.overflow = 'visible'
+    document.querySelector('.noidung_chat i').style.visibility = 'hidden'
+    document.querySelector('.noidung_chat hr').style.display = 'none'
+    const noi_dung_chats = $$(".noi_dung_chat");
+
+    list_chats.forEach((list_chat, index) => {
+        list_chat.onclick = function () {
+            document.querySelector('.feedback').style.display = 'block'
+            document.querySelector('.noidung_chat').style.height = '340px'
+            document.querySelector('.noidung_chat').style.overflow = 'scroll'
+            document.querySelector('.noidung_chat i').style.visibility = 'visible'
+            document.querySelector('.noidung_chat hr').style.display = 'block'
+            const noidungchat = noi_dung_chats[index ];
+            $(".list_chat.lchat_active").classList.remove("lchat_active");
+            $(".noi_dung_chat.fb_active").classList.remove("fb_active");
+            this.classList.add("lchat_active");
+            noidungchat.classList.add("fb_active");
+            
+            var bbb = document.querySelector('.noidung_chat > p')
+            bbb.innerText = document.querySelector('.ten_shop'+index).innerText
+            var send = document.querySelector('.fa-paper-plane')
+            var box = document.querySelector('.feed_back_nd'+index)
+
+                send.addEventListener('click', function(){
+                    var nd_feedback = document.querySelector('.input_FB').value
+                    var itemp = document.createElement('p')
+                    var itemi = document.createElement('i')
+                    itemp.innerText = nd_feedback;
+                    itemi.className ='fas fa-times'
+                    itemp.appendChild(itemi)
+                    box.appendChild(itemp)
+                    console.log(box)
+                    document.querySelector('.input_FB').value=''
+                    itemi.addEventListener('click' , function(){
+                        box.removeChild(itemp)
+                    })
+                })
+        };
+    });
+
+    
+   
+
+    </script>
+</body>
+</html>
